@@ -49,6 +49,6 @@ public class NewCategoryActivity extends AppCompatActivity implements View.OnCli
         startActivity(intent);
     }
     public void saveCategoryToFiredbase(String category) {
-        mCreateNewCategory.setValue(category);
+        mCreateNewCategory.push().setValue(category);
     }
 }
