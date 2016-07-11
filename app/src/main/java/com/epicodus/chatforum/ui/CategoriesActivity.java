@@ -11,6 +11,7 @@ import android.widget.ListView;
 import com.epicodus.chatforum.R;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class CategoriesActivity extends AppCompatActivity implements View.OnClickListener{
     @Bind(R.id.lCategories)
@@ -25,6 +26,9 @@ public class CategoriesActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
         mLCategories = (ListView) findViewById(R.id.lCategories);
+        ButterKnife.bind(this);
+        mNewCategory.setOnClickListener(this);
+
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, categories);
         mLCategories.setAdapter(adapter);
@@ -33,7 +37,6 @@ public class CategoriesActivity extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onClick(View view) {
-
         Intent intent = new Intent(CategoriesActivity.this, NewCategoryActivity.class);
         startActivity(intent);
     }
