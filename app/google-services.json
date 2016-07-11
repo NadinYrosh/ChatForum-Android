@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "361948676152",
+    "firebase_url": "https://chatforum-2b126.firebaseio.com",
+    "project_id": "chatforum-2b126",
+    "storage_bucket": "chatforum-2b126.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361948676152:android:c09905e996f14778",
+        "android_client_info": {
+          "package_name": "com.epicodus.chatforum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361948676152-89gtslccpd528ljt6a8sfa3fjlsbempb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiQ_TwRUOW5htpLoLql03ZuoPLRsgfrag"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
