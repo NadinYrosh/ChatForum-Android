@@ -11,6 +11,7 @@ import com.epicodus.chatforum.Constants;
 import com.epicodus.chatforum.R;
 import com.epicodus.chatforum.models.Category;
 import com.epicodus.chatforum.ui.CategoriesActivity;
+import com.epicodus.chatforum.ui.MessageActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -40,5 +41,7 @@ public class FirebaseCategoryViewHolder  extends RecyclerView.ViewHolder impleme
 
     @Override
     public void onClick(View view) {
+        Intent intent = new Intent(mContext, MessageActivity.class);
+        mContext.startActivity(intent);
     }
 }

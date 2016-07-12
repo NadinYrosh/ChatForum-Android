@@ -12,8 +12,11 @@ import android.widget.ListView;
 import com.epicodus.chatforum.Constants;
 import com.epicodus.chatforum.R;
 import com.epicodus.chatforum.models.Category;
+import com.epicodus.chatforum.models.Message;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -43,7 +46,7 @@ public class NewCategoryActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View view) {
         String categoryName = mUserInput.getText().toString();
-        Category category = new Category(categoryName);
+        Category category = new Category(categoryName, new ArrayList<Message>());
         saveCategoryToFirebase(category);
         Intent intent = new Intent(NewCategoryActivity.this, CategoriesActivity.class);
         startActivity(intent);
