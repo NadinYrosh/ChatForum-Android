@@ -45,7 +45,7 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
         return mCategories.size();
     }
 
-    public class CategoryViewHolder extends RecyclerView.ViewHolder {
+    public class CategoryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         @Bind(R.id.titleTextView) TextView mTitleTextView;
 
         private Context mContext;
@@ -58,6 +58,13 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
 
         public void bindCategory (Category category) {
             mTitleTextView.setText(category.getCategoryName());
+        }
+
+        @Override
+        public void onClick(View view) {
+            //intent
+                    //pass in the text name of the category
+           //childEventListener
         }
     }
 }

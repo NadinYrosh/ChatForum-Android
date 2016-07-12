@@ -42,6 +42,20 @@ public class FirebaseCategoryViewHolder  extends RecyclerView.ViewHolder impleme
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(mContext, MessageActivity.class);
+        //intent.putExtra("mContext", mContext);
         mContext.startActivity(intent);
+
     }
 }
+
+
+//categories
+//   -"technology"
+//        -pushid (abc)
+//            -"text" : "hi";
+//   -"sports"
+
+
+
+
+
